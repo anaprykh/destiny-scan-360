@@ -1,13 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useRef } from "react";
+import HeroSection from "@/components/HeroSection";
+import BenefitsSection from "@/components/BenefitsSection";
+import DiagnosticLevels from "@/components/DiagnosticLevels";
+import ResultSection from "@/components/ResultSection";
+import AboutSection from "@/components/AboutSection";
+import LeadForm from "@/components/LeadForm";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  const formRef = useRef<HTMLElement>(null);
+
+  const scrollToForm = () => {
+    formRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <HeroSection onBookClick={scrollToForm} />
+      <BenefitsSection />
+      <DiagnosticLevels />
+      <ResultSection />
+      <AboutSection />
+      <LeadForm ref={formRef} />
+      <Footer />
+    </main>
   );
 };
 
