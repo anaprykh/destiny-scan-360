@@ -33,8 +33,8 @@ const HeroSection = ({ onBookClick }: HeroSectionProps) => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight mb-6">
-              Уникальная Диагностика Жизни Life Diagnostics
-              <span className="block gradient-gold-text">for 2026</span>
+              Уникальная Диагностика Жизни 
+              <span className="block gradient-gold-text">для 2026 года </span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-light">
@@ -42,7 +42,7 @@ const HeroSection = ({ onBookClick }: HeroSectionProps) => {
             </p>
             
             <p className="text-base text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0">
-              Уже за 30 минут Вы поймете, что необходимо делать и что лучше избегать, чтобы достичь желаемых целей и обрести силы справиться со всеми препятствиями. 
+              Уже за 30 минут Вы поймете, что необходимо делать и что лучше избегать, чтобы достичь желаемых целей и обрести силы справиться со всеми препятствиями 
             </p>
             
             {/* Price */}
