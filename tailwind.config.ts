@@ -12,7 +12,7 @@ export default {
         sm: "640px",
         md: "768px",
         lg: "1024px",
-        xl: "1100px",
+        xl: "1200px",
       },
     },
     extend: {
@@ -25,12 +25,15 @@ export default {
         gold: {
           DEFAULT: "hsl(var(--gold))",
           light: "hsl(var(--gold-light))",
+          glow: "hsl(var(--gold-glow))",
         },
-        burgundy: {
-          deep: "hsl(var(--burgundy-deep))",
-          mid: "hsl(var(--burgundy-mid))",
+        cosmic: {
+          purple: "hsl(var(--cosmic-purple))",
+          deep: "hsl(var(--cosmic-deep))",
         },
-        wine: "hsl(var(--wine))",
+        mystic: {
+          blue: "hsl(var(--mystic-blue))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -76,7 +79,7 @@ export default {
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {

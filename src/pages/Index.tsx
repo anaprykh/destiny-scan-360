@@ -1,9 +1,11 @@
 import { useRef } from "react";
 import HeroSection from "@/components/HeroSection";
-import WhatYouGet from "@/components/WhatYouGet";
-import MethodSection from "@/components/MethodSection";
-import BookingForm from "@/components/BookingForm";
-import FooterCTA from "@/components/FooterCTA";
+import BenefitsSection from "@/components/BenefitsSection";
+import DiagnosticLevels from "@/components/DiagnosticLevels";
+import ResultSection from "@/components/ResultSection";
+import AboutSection from "@/components/AboutSection";
+import LeadForm from "@/components/LeadForm";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const formRef = useRef<HTMLElement>(null);
@@ -15,10 +17,12 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <HeroSection onBookClick={scrollToForm} />
-      <WhatYouGet />
-      <MethodSection />
-      <BookingForm ref={formRef} />
-      <FooterCTA />
+      <BenefitsSection />
+      <DiagnosticLevels />
+      <ResultSection />
+      <AboutSection />
+      <LeadForm ref={formRef} />
+      <Footer />
     </main>
   );
 };
