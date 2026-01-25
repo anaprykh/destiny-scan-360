@@ -6,34 +6,34 @@
 
 @layer base {
   :root {
-    /* Deep cosmic dark theme */
-    --background: 230 25% 8%;
-    --foreground: 45 30% 95%;
+    /* Deep burgundy/wine red premium palette */
+    --background: 0 20% 8%;
+    --foreground: 40 25% 95%;
 
-    --card: 230 25% 12%;
-    --card-foreground: 45 30% 95%;
+    --card: 0 18% 12%;
+    --card-foreground: 40 25% 95%;
 
-    --popover: 230 25% 10%;
-    --popover-foreground: 45 30% 95%;
+    --popover: 0 18% 10%;
+    --popover-foreground: 40 25% 95%;
 
     /* Gold accent - premium feel */
     --primary: 38 70% 55%;
-    --primary-foreground: 230 25% 8%;
+    --primary-foreground: 0 20% 8%;
 
-    --secondary: 230 20% 18%;
-    --secondary-foreground: 45 30% 90%;
+    --secondary: 0 15% 16%;
+    --secondary-foreground: 40 25% 90%;
 
-    --muted: 230 20% 15%;
-    --muted-foreground: 230 15% 55%;
+    --muted: 0 15% 14%;
+    --muted-foreground: 0 10% 55%;
 
-    --accent: 270 30% 25%;
-    --accent-foreground: 45 30% 95%;
+    --accent: 0 25% 18%;
+    --accent-foreground: 40 25% 95%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 230 20% 20%;
-    --input: 230 20% 18%;
+    --border: 0 15% 18%;
+    --input: 0 15% 14%;
     --ring: 38 70% 55%;
 
     --radius: 0.75rem;
@@ -41,25 +41,23 @@
     /* Custom tokens */
     --gold: 38 70% 55%;
     --gold-light: 38 80% 70%;
-    --gold-glow: 38 100% 50%;
-    --cosmic-purple: 270 40% 20%;
-    --cosmic-deep: 230 35% 6%;
-    --mystic-blue: 220 50% 25%;
+    --burgundy-deep: 0 25% 6%;
+    --burgundy-mid: 0 20% 12%;
+    --wine: 350 30% 15%;
 
     /* Gradients */
-    --gradient-cosmic: linear-gradient(135deg, hsl(230 35% 6%) 0%, hsl(270 40% 15%) 50%, hsl(230 35% 8%) 100%);
+    --gradient-burgundy: linear-gradient(180deg, hsl(0 25% 6%) 0%, hsl(0 20% 10%) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(38 70% 45%) 0%, hsl(38 80% 60%) 50%, hsl(38 70% 50%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(230 25% 14%) 0%, hsl(230 25% 10%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 18% 14%) 0%, hsl(0 18% 10%) 100%);
     
     /* Shadows */
     --shadow-gold: 0 0 30px hsl(38 100% 50% / 0.15);
-    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.3);
-    --shadow-glow: 0 0 60px hsl(38 100% 50% / 0.1);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.4);
   }
 
   .dark {
-    --background: 230 25% 8%;
-    --foreground: 45 30% 95%;
+    --background: 0 20% 8%;
+    --foreground: 40 25% 95%;
   }
 }
 
@@ -75,8 +73,7 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', sans-serif;
-    background: var(--gradient-cosmic);
-    background-attachment: fixed;
+    background: var(--gradient-burgundy);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -104,29 +101,10 @@
     box-shadow: var(--shadow-gold);
   }
 
-  .card-cosmic {
+  .card-burgundy {
     background: var(--gradient-card);
     border: 1px solid hsl(var(--border));
     box-shadow: var(--shadow-card);
-  }
-
-  .cosmic-bg {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .cosmic-bg::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-      radial-gradient(ellipse at 20% 20%, hsl(270 40% 15% / 0.4) 0%, transparent 50%),
-      radial-gradient(ellipse at 80% 80%, hsl(220 50% 20% / 0.3) 0%, transparent 50%),
-      radial-gradient(ellipse at 50% 50%, hsl(38 70% 50% / 0.05) 0%, transparent 70%);
-    pointer-events: none;
   }
 
   .btn-primary {
@@ -138,7 +116,7 @@
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 40px hsl(38 100% 50% / 0.25);
+    box-shadow: 0 0 40px hsl(38 100% 50% / 0.3);
   }
 
   .btn-secondary {
@@ -152,45 +130,25 @@
     background: hsl(var(--gold) / 0.1);
   }
 
-  .input-cosmic {
+  .input-field {
     @apply w-full rounded-lg px-4 py-4 text-base transition-all duration-300;
     background: hsl(var(--input));
     border: 1px solid hsl(var(--border));
     color: hsl(var(--foreground));
   }
 
-  .input-cosmic:focus {
+  .input-field:focus {
     outline: none;
     border-color: hsl(var(--gold));
-    box-shadow: 0 0 0 3px hsl(var(--gold) / 0.1);
+    box-shadow: 0 0 0 3px hsl(var(--gold) / 0.15);
   }
 
-  .input-cosmic::placeholder {
+  .input-field::placeholder {
     color: hsl(var(--muted-foreground));
   }
 
   .section-divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent 0%, hsl(var(--gold) / 0.3) 50%, transparent 100%);
-  }
-}
-
-@layer utilities {
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-  }
-
-  .animate-pulse-soft {
-    animation: pulse-soft 4s ease-in-out infinite;
-  }
-
-  @keyframes pulse-soft {
-    0%, 100% { opacity: 0.8; }
-    50% { opacity: 1; }
+    background: linear-gradient(90deg, transparent 0%, hsl(var(--gold) / 0.2) 50%, transparent 100%);
   }
 }
