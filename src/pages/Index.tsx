@@ -16,8 +16,6 @@ const Index = () => {
     <main className="min-h-screen">
       <HeroSection onBookClick={scrollToForm} />
       <BenefitsSection />
-      <DiagnosticLevels />
-      <ResultSection />
       <AboutSection />
       <LeadForm ref={formRef} />
       <Footer />
