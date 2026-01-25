@@ -25,38 +25,38 @@ const AboutSection = () => {
             {/* Text */}
             <div className="text-center md:text-left">
               <span className="text-gold text-sm font-medium tracking-widest uppercase mb-4 block">
-                About the Author
+                КТО Я 
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">
-                Evgenia Ivanova
+                Евгения Иванова
               </h2>
-              <p className="text-gold mb-6">Hereditary clairvoyant</p>
+              <p className="text-gold mb-6">Потомственная ясновидящая</p>
               
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Creator of the three-level life diagnostics system that combines 
-                  ancient wisdom with modern analytical approach.
+                  Автор трёхуровневой системы диагностики жизни, основанной 
+                  на древних эзотерических знаниях.
                 </p>
                 <p>
-                  Specializes in life direction, energy balance, financial flow, 
-                  and destiny analysis.
+                  Специализируется на направлении жизни, энергетическом балансе, 
+                  финансовых потоках и анализе судьбы.
                 </p>
                 <p>
-                  Over 15 years of practice helping people find clarity and 
-                  direction in their lives.
+                  Более 15 лет практики, помогая людям находить ясность
+                  и направление в жизни.
                 </p>
               </div>
               
               {/* Credentials */}
               <div className="flex flex-wrap gap-3 mt-8 justify-center md:justify-start">
                 <span className="px-4 py-2 rounded-full bg-gold/10 text-gold text-sm">
-                  Life Direction
+                  Жизненный путь
                 </span>
                 <span className="px-4 py-2 rounded-full bg-gold/10 text-gold text-sm">
-                  Energy Balance
+                  Энергия и баланс
                 </span>
                 <span className="px-4 py-2 rounded-full bg-gold/10 text-gold text-sm">
-                  Destiny Analysis
+                  Судьба и предназначение
                 </span>
               </div>
             </div>
