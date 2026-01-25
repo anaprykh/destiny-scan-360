@@ -3,23 +3,23 @@ import { Calendar, Zap, Users, Clock } from "lucide-react";
 const benefits = [
   {
     icon: Calendar,
-    title: "12-Month Life Scenario",
-    description: "Your complete life map with key turning points and decisive moments"
+    title: "12-месячный сценарий жизни",
+    description: "Полная карта вашей жизни с ключевыми поворотными точками и решающими моментами в 2026 году"
   },
   {
     icon: Zap,
-    title: "Strengths & Weak Zones",
-    description: "Understand your resources and vulnerabilities for the coming year"
+    title: "Сильные стороны и уязвимые зоны",
+    description: "Понимание ваших ресурсов и слабых мест в предстоящем году"
   },
   {
     icon: Users,
-    title: "Hidden Influences",
-    description: "Discover who influences you and where energy and financial leaks occur"
+    title: "Скрытые влияния",
+    description: "Понимание того, кто и что на вас влияет, а также где происходят утечки энергии и финансов"
   },
   {
     icon: Clock,
-    title: "Perfect Timing",
-    description: "Know when to act boldly and when it's better to pause and wait"
+    title: "Идеальное время",
+    description: "Знания, когда действовать смело, а когда лучше остановиться и подождать"
   }
 ];
 
@@ -29,10 +29,10 @@ const BenefitsSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">
-            What You Get in <span className="text-gold">30 Minutes</span>
+            Что Вы получите за <span className="text-gold">30 минут</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            In a single consultation, you will discover the complete picture of your year ahead
+           За одну консультацию вы увидите полную картину предстоящего года
           </p>
         </div>
         
