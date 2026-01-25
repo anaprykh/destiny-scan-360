@@ -21,18 +21,18 @@ const LeadForm = forwardRef<HTMLElement>((_, ref) => {
     const newErrors: FormErrors = {};
     
     if (!formData.name.trim()) {
-      newErrors.name = "Please enter your name";
+      newErrors.name = "Ваше имя";
     } else if (formData.name.trim().length < 2) {
-      newErrors.name = "Name must be at least 2 characters";
+      newErrors.name = "Имя должно содержать не менее 2 символов";
     } else if (formData.name.trim().length > 100) {
-      newErrors.name = "Name must be less than 100 characters";
+      newErrors.name = "Имя должно содержать не больше 100 символов";
     }
     
     const phoneRegex = /^\+?[\d\s\-()]{8,20}$/;
     if (!formData.phone.trim()) {
-      newErrors.phone = "Please enter your phone number";
+      newErrors.phone = "Номер телефона";
     } else if (!phoneRegex.test(formData.phone.trim())) {
-      newErrors.phone = "Please enter a valid phone number";
+      newErrors.phone = "Введите действительный номер телефона";
     }
     
     setErrors(newErrors);
@@ -80,13 +80,13 @@ const LeadForm = forwardRef<HTMLElement>((_, ref) => {
                 <Check className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-serif font-semibold mb-4">
-                Thank You!
+                Спасибо!
               </h3>
               <p className="text-muted-foreground mb-4">
-                Your request has been received. Evgenia will contact you via WhatsApp shortly.
+                Ваш запрос получен. Евгения свяжется с вами через WhatsApp в ближайшее время.
               </p>
               <p className="text-sm text-gold">
-                Please check your WhatsApp messages
+                Пожалуйста, проверьте свои сообщения в WhatsApp
               </p>
             </div>
           </div>
@@ -101,13 +101,13 @@ const LeadForm = forwardRef<HTMLElement>((_, ref) => {
         <div className="max-w-lg mx-auto">
           <div className="text-center mb-10">
             <span className="text-gold text-sm font-medium tracking-widest uppercase mb-4 block">
-              Get Started
+              Начнем
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">
-              Book Your Consultation
+             Забронировать Консультацию
             </h2>
             <p className="text-muted-foreground">
-              Leave your details and Evgenia will personally contact you via WhatsApp
+              Оставьте свои данные, и Евгения лично свяжется с вами через WhatsApp
             </p>
           </div>
           
@@ -116,7 +116,7 @@ const LeadForm = forwardRef<HTMLElement>((_, ref) => {
               {/* Name field */}
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Your Name
+                 Ваше имя
                 </label>
                 <input
                   type="text"
@@ -124,7 +124,7 @@ const LeadForm = forwardRef<HTMLElement>((_, ref) => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="input-cosmic"
-                  placeholder="Enter your name"
+                  placeholder="Ваше имя"
                   maxLength={100}
                 />
                 {errors.name && (
@@ -135,7 +135,7 @@ const LeadForm = forwardRef<HTMLElement>((_, ref) => {
               {/* Phone field */}
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                  Phone Number
+                  Номер телефона
                 </label>
                 <input
                   type="tel"
@@ -165,7 +165,7 @@ const LeadForm = forwardRef<HTMLElement>((_, ref) => {
                 ) : (
                   <>
                     <Send className="w-5 h-5" />
-                    Book a Consultation
+                    Забронировать Консультацию
                   </>
                 )}
               </button>
@@ -173,14 +173,14 @@ const LeadForm = forwardRef<HTMLElement>((_, ref) => {
             
             {/* Privacy note */}
             <p className="text-xs text-muted-foreground text-center mt-6">
-              After submitting, Evgenia will personally contact you via WhatsApp.
+              После отправки Евгения лично свяжется с вами через WhatsApp
             </p>
           </form>
           
           {/* Price reminder */}
           <div className="text-center mt-8">
             <p className="text-muted-foreground">
-              30-minute consultation for just{" "}
+              30-минутная консультация только за{" "}
               <span className="text-gold font-semibold">€15</span>
             </p>
           </div>
