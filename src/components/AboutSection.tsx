@@ -30,7 +30,7 @@ const AboutSection = () => {
               <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">
                 Евгения Иванова
               </h2>
-              <p className="text-gold mb-6">Потомственная ясновидящая</p>
+              <p className="text-gold mb-6">Потомственная ясновидящая в четвёртом поколении</p>
               
               <div className="space-y-4 text-muted-foreground">
                 <p>
