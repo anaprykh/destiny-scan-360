@@ -1,8 +1,6 @@
 import { useRef } from "react";
 import HeroSection from "@/components/HeroSection";
 import BenefitsSection from "@/components/BenefitsSection";
-import DiagnosticLevels from "@/components/DiagnosticLevels";
-import ResultSection from "@/components/ResultSection";
 import AboutSection from "@/components/AboutSection";
 import LeadForm from "@/components/LeadForm";
 import Footer from "@/components/Footer";
