@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 
 const Footer = () => {
-  const whatsappLink = "https://wa.me/1234567890"; // Replace with actual number
+  const whatsappLink = "https://wa.me/380671556445"; // Replace with actual number
   const currentYear = new Date().getFullYear();
 
   return (
