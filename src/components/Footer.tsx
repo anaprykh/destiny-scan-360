@@ -23,7 +23,7 @@ const Footer = () => {
               className="btn-secondary gap-2 inline-flex"
             >
               <MessageCircle className="w-5 h-5" />
-              Свяжитесь по WhatsApp
+              Свяжитесь в WhatsApp
             </a>
           </div>
           
