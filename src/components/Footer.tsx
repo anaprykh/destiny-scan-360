@@ -11,10 +11,10 @@ const Footer = () => {
           {/* CTA Block */}
           <div className="mb-12">
             <h3 className="text-2xl font-serif font-semibold mb-4">
-              Ready to discover your <span className="text-gold">2026 life map</span>?
+              Готовы открыть для себя <span className="text-gold">сценарий вашего 2026 года</span>?
             </h3>
             <p className="text-muted-foreground mb-6">
-              30-minute consultation — just <span className="text-gold font-semibold">€15</span>
+              30-минутная консультация — только за <span className="text-gold font-semibold">€15</span>
             </p>
             <a 
               href={whatsappLink}
@@ -23,7 +23,7 @@ const Footer = () => {
               className="btn-secondary gap-2 inline-flex"
             >
               <MessageCircle className="w-5 h-5" />
-              Message on WhatsApp
+              Свяжитесь по WhatsApp
             </a>
           </div>
           
@@ -33,10 +33,10 @@ const Footer = () => {
           {/* Copyright */}
           <div className="space-y-2">
             <p className="text-sm text-muted-foreground">
-              Evgenia Ivanova — Life Diagnostics
+              Евгения Иванова — Диагностика Жизни
             </p>
             <p className="text-xs text-muted-foreground/60">
-              © {currentYear} All rights reserved
+              © {2026} All rights reserved
             </p>
           </div>
         </div>
