@@ -7,7 +7,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ onBookClick }: HeroSectionProps) => {
-  const whatsappLink = "https://wa.me/1234567890"; // Replace with actual number
+  const whatsappLink = "https://wa.me/380671556445"; // Replace with actual number
 
   return (
     <section 
@@ -28,22 +28,21 @@ const HeroSection = ({ onBookClick }: HeroSectionProps) => {
           <div className="text-center lg:text-left">
             <div className="inline-block mb-6">
               <span className="text-gold text-sm font-medium tracking-widest uppercase">
-                Evgenia Ivanova
+                Евгения Иванова
               </span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight mb-6">
-              Unique Life Diagnostics
+              Уникальная Диагностика Жизни Life Diagnostics
               <span className="block gradient-gold-text">for 2026</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-light">
-              Esoteric Check-Up 360° — a complete scan of your destiny in 30 minutes
+              Что вас ожидает в 2026 году? — Индивидульный прогноз
             </p>
             
             <p className="text-base text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0">
-              This is not guessing and not random cards. It is a precise annual analysis of your life, 
-              helping you clearly understand where you are and where your life is heading.
+              Уже за 30 минут Вы поймете, что необходимо делать и что лучше избегать, чтобы достичь желаемых целей и обрести силы справиться со всеми препятствиями. 
             </p>
             
             {/* Price */}
@@ -52,7 +51,7 @@ const HeroSection = ({ onBookClick }: HeroSectionProps) => {
                 <span className="text-muted-foreground line-through text-lg">€50</span>
                 <span className="text-4xl font-serif font-bold text-gold">€15</span>
               </div>
-              <p className="text-sm text-muted-foreground mt-1">Special price for 2026</p>
+              <p className="text-sm text-muted-foreground mt-1">Специальная цена</p>
             </div>
             
             {/* CTA Buttons */}
@@ -62,7 +61,7 @@ const HeroSection = ({ onBookClick }: HeroSectionProps) => {
                 className="btn-primary gap-2"
               >
                 <Calendar className="w-5 h-5" />
-                Book a Consultation
+                Забронировать Консультацию
               </button>
               <a 
                 href={whatsappLink}
@@ -71,7 +70,7 @@ const HeroSection = ({ onBookClick }: HeroSectionProps) => {
                 className="btn-secondary gap-2"
               >
                 <MessageCircle className="w-5 h-5" />
-                Message on WhatsApp
+               Свяжитесь в WhatsApp
               </a>
             </div>
           </div>
