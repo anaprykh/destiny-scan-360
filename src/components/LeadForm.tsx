@@ -1,7 +1,7 @@
 import { useState, forwardRef } from "react";
 import { Send, Check, Loader2 } from "lucide-react";
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx3KZcu7f-_-KBIwQ2u0b-JfIU3QmcYS45jrKgYT2gwlNOyW_SNqXLLLegrWJcn5Hik3g/exec";
+  "https://script.google.com/macros/s/AKfycbymf4vdnqPU4loE11dYAmVOf8_gPF4fIr-W4tNf2RM7Rkzo5VHCAKr01Spuy_b_JNdi/exec";
 
 interface FormData {
   name: string;
@@ -49,22 +49,18 @@ const handleSubmit = async (e: React.FormEvent) => {
   setIsSubmitting(true);
 
   try {
-    const payload = {
+    const body = new URLSearchParams({
       name: formData.name.trim(),
       phone: formData.phone.trim(),
-    };
-
-    const res = await fetch(SCRIPT_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
     });
 
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    await fetch(SCRIPT_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+      body,
+    });
 
-    const json = await res.json().catch(() => null);
-    if (json && json.ok !== true) throw new Error(json.error || "Script error");
-
+    // если запрос ушёл — считаем успехом (Apps Script часто не даёт нормально читать ответ из браузера)
     setIsSuccess(true);
     setFormData({ name: "", phone: "" });
   } catch (error) {
@@ -73,6 +69,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     setIsSubmitting(false);
   }
 };
+
 
 //конец кода формы
   if (isSuccess) {
