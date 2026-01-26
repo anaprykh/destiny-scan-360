@@ -1,7 +1,7 @@
 import { useState, forwardRef } from "react";
 import { Send, Check, Loader2 } from "lucide-react";
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbymf4vdnqPU4loE11dYAmVOf8_gPF4fIr-W4tNf2RM7Rkzo5VHCAKr01Spuy_b_JNdi/exec";
+  "https://script.google.com/macros/s/AKfycbwxKJQ2y5OMevZlmWmmJnNGQ3NhEEQGRyGlflcqSKgQYgq6aQ-Ooo1wWbtWMWDoE995tQ/exec";
 
 interface FormData {
   name: string;
