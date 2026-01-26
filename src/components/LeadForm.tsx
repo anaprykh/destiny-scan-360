@@ -1,5 +1,7 @@
 import { useState, forwardRef } from "react";
 import { Send, Check, Loader2 } from "lucide-react";
+const SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbx3KZcu7f-_-KBIwQ2u0b-JfIU3QmcYS45jrKgYT2gwlNOyW_SNqXLLLegrWJcn5Hik3g/exec";
 
 interface FormData {
   name: string;
@@ -38,38 +40,41 @@ const LeadForm = forwardRef<HTMLElement>((_, ref) => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+//отправка формы в Google Sheets 
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!validateForm()) return;
-    
-    setIsSubmitting(true);
-    
-    // Simulate API call - replace with actual POST endpoint
-    try {
-      // const response = await fetch('/api/leads', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({
-      //     name: formData.name.trim(),
-      //     phone: formData.phone.trim(),
-      //     timestamp: new Date().toISOString()
-      //   })
-      // });
-      
-      // Simulate network delay
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      setIsSuccess(true);
-      setFormData({ name: "", phone: "" });
-    } catch (error) {
-      console.error("Form submission error:", error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  if (!validateForm()) return;
 
+  setIsSubmitting(true);
+
+  try {
+    const payload = {
+      name: formData.name.trim(),
+      phone: formData.phone.trim(),
+    };
+
+    const res = await fetch(SCRIPT_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const json = await res.json().catch(() => null);
+    if (json && json.ok !== true) throw new Error(json.error || "Script error");
+
+    setIsSuccess(true);
+    setFormData({ name: "", phone: "" });
+  } catch (error) {
+    console.error("Form submission error:", error);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
+//конец кода формы
   if (isSuccess) {
     return (
       <section ref={ref} id="booking-form" className="py-24 px-4">
@@ -160,7 +165,7 @@ const LeadForm = forwardRef<HTMLElement>((_, ref) => {
                 {isSubmitting ? (
                   <>
                     <Loader2 className="w-5 h-5 animate-spin" />
-                    Submitting...
+                    Отправка...
                   </>
                 ) : (
                   <>
