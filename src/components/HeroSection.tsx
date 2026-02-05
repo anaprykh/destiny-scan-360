@@ -20,6 +20,17 @@ const HeroSection = ({ onBookClick }: HeroSectionProps) => {
       }}
     >
       {/* Overlay */}
+      <div className="mb-6 text-center">
+  <a
+    href={whatsappLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-lg font-semibold underline"
+  >
+    +1 (845) 607-8579
+  </a>
+</div>
+
       <div className="absolute inset-0 bg-background/70" />
       
       <div className="container mx-auto relative z-10">
