@@ -8,6 +8,17 @@ const Footer = () => {
     <footer className="py-16 px-4 border-t border-border/50">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto text-center">
+       <div className="mb-6 text-center">
+  <a
+    href={whatsappLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-lg font-semibold underline"
+  >
+    +1 (845) 607-8579
+  </a>
+</div>
+
           {/* CTA Block */}
           <div className="mb-12">
             <h3 className="text-2xl font-serif font-semibold mb-4">
