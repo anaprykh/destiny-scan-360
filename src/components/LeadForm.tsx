@@ -145,7 +145,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="input-cosmic"
-                  placeholder="+49 123 456 7890"
+                  placeholder="+1 123 456 7890"
                   maxLength={20}
                 />
                 {errors.phone && (
