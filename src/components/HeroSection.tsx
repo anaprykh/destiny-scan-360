@@ -69,7 +69,11 @@ const HeroSection = ({ onBookClick }: HeroSectionProps) => {
               </a>
             </div>
           </div>
-          
+          <div className="mt-10 max-w-2xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-6 py-5">
+  <p className="text-base md:text-lg text-white/85 leading-relaxed font-light">
+    Если вы оказались в сложной, запутанной или повторяющейся жизненной ситуации, важно сначала увидеть её истинную причину. Диагностика помогает понять, с чем вы действительно имеете дело.
+  </p>
+</div>
           {/* Portrait Image */}
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative">
