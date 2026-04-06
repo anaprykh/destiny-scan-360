@@ -32,7 +32,7 @@ const BenefitsSection = () => {
             Что Вы получите за <span className="text-gold">30 минут</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-           За одну консультацию вы увидите полную картину предстоящего года
+           Как проходит диагностика
           </p>
         </div>
         
