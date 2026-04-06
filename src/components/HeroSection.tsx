@@ -38,14 +38,15 @@ const HeroSection = ({ onBookClick }: HeroSectionProps) => {
 </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight mb-6">
               ИНДИВИДУАЛЬНА ДИАГНОСТИКА 
-              <span className="block gradient-gold-text">от Евгении Ивановой </span>
-            </h1>
+<span className="block gradient-gold-text text-lg md:text-xl lg:text-2xl mt-2">
+  от Евгении Ивановой
+</span>            </h1>
             
 
             
-            <p className="text-base text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0">
-              Первый шаг к тому, чтобы понять, что происходит в вашей жизни и почему 
-            </p>
+         <p className="text-lg md:text-xl text-white/85 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+  Первый шаг к тому, чтобы понять, что происходит в вашей жизни и почему
+</p>
             
            
             
