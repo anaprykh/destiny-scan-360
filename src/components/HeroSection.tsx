@@ -37,14 +37,13 @@ const HeroSection = ({ onBookClick }: HeroSectionProps) => {
   Конфиденциально • Онлайн • По предварительной записи
 </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight mb-6">
-              ИНДИВИДУАЛЬНА ДИАГНОСТИКА 
-<span className="block gradient-gold-text text-lg md:text-xl lg:text-2xl mt-2">
-  от Евгении Ивановой
-</span>            </h1>
+  Индивидуальная диагностика
+  <span className="block gradient-gold-text text-3xl md:text-4xl lg:text-5xl mt-2">
+    от Евгении Ивановой
+  </span>
+</h1>
             
-
-            
-         <p className="text-lg md:text-xl text-white/85 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+<p className="text-base md:text-lg text-white/80 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
   Первый шаг к тому, чтобы понять, что происходит в вашей жизни и почему
 </p>
             
