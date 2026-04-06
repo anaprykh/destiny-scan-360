@@ -19,7 +19,7 @@ const Index = () => {
   <div className="max-w-5xl mx-auto">
     <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-6 md:px-10 py-6 md:py-8">
       <p className="text-base md:text-xl text-white/85 leading-relaxed font-light text-center">
-        Если вы оказались в сложной, запутанной или повторяющейся жизненной ситуации, важно сначала увидеть её истинную причину. Диагностика помогает понять, с чем вы действительно имеете дело.
+        Если вы оказались в сложной, запутанной или повторяющейся жизненной ситуации, важно сначала увидеть её истинную причину. Диагностика помогает понять, с чем вы действительно имеете дело
       </p>
     </div>
   </div>
