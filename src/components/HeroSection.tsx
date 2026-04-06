@@ -30,31 +30,22 @@ const HeroSection = ({ onBookClick }: HeroSectionProps) => {
           <div className="text-center lg:text-left">
             <div className="inline-block mb-6">
               <span className="text-gold text-sm font-medium tracking-widest uppercase">
-                Евгения Иванова
+                
               </span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight mb-6">
-              Уникальная Диагностика Жизни 
-              <span className="block gradient-gold-text">для 2026 года </span>
+              ИНДИВИДУАЛЬНА ДИАГНОСТИКА 
+              <span className="block gradient-gold-text">от Евгении Ивановой </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-light">
-              Что вас ожидает в 2026 году? — Индивидульный прогноз
-            </p>
+
             
             <p className="text-base text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0">
-              Уже за 30 минут Вы поймете, что необходимо делать и что лучше избегать, чтобы достичь желаемых целей и обрести силы справиться со всеми препятствиями 
+              Первый шаг к тому, чтобы понять, что происходит в вашей жизни и почему 
             </p>
             
-            {/* Price */}
-            <div className="mb-10">
-              <div className="inline-flex items-baseline gap-3">
-                <span className="text-muted-foreground line-through text-lg">€50</span>
-                <span className="text-4xl font-serif font-bold text-gold">€15</span>
-              </div>
-              <p className="text-sm text-muted-foreground mt-1">Специальная цена</p>
-            </div>
+           
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
