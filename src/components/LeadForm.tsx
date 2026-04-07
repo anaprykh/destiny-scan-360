@@ -167,7 +167,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 ) : (
                   <>
                     <Send className="w-5 h-5" />
-                    Забронировать Консультацию
+                    Забронировать Диагностику
                   </>
                 )}
               </button>
@@ -180,12 +180,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           </form>
           
           {/* Price reminder */}
-          <div className="text-center mt-8">
-            <p className="text-muted-foreground">
-              30-минутная консультация только за{" "}
-              <span className="text-gold font-semibold">€15</span>
-            </p>
-          </div>
+          
         </div>
       </div>
     </section>
