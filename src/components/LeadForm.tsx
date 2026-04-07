@@ -106,7 +106,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               Начнем
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">
-             Забронировать Консультацию
+             Забронировать Диагностику
             </h2>
             <p className="text-muted-foreground">
               Оставьте свои данные, и Евгения лично свяжется с вами через WhatsApp
