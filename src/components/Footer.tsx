@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 
 const Footer = () => {
-  const whatsappLink = "https://wa.me/18456078579"; // Replace with actual number
+  const whatsappLink = "https://wa.me/380671556445"; // Replace with actual number
   const currentYear = new Date().getFullYear();
 
   return (
@@ -15,17 +15,17 @@ const Footer = () => {
     rel="noopener noreferrer"
     className="text-lg font-semibold underline"
   >
-    +1 (845) 607-8579
+    +1 (067) 155-6445
   </a>
 </div>
 
           {/* CTA Block */}
           <div className="mb-12">
             <h3 className="text-2xl font-serif font-semibold mb-4">
-              Готовы открыть для себя <span className="text-gold">сценарий вашего 2026 года</span>?
+              Хотите понять, <span className="text-gold">что происходит в вашей жизни сейчас</span>?
             </h3>
             <p className="text-muted-foreground mb-6">
-              30-минутная консультация — только за <span className="text-gold font-semibold">€15</span>
+              Записывайтесь на <span className="text-gold font-semibold">диагностику</span>
             </p>
             <a 
               href={whatsappLink}
